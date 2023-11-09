@@ -1,0 +1,23 @@
+<p>
+  <strong>Olá, Michel</strong>
+  <br />
+  Ag: 9999, Conta: 99999-9
+</p>
+
+<p>
+  Saldo: R$ <span id="get-balance">{{ getBalance }}</span>
+  <br />
+
+  <input id="withdraw-input" type="text" #withdraw />
+  <button id="withdraw" (click)="setWithdraw(withdraw.value)">Sacar</button>
+</p>
+
+<p>
+  Carteira: R$ <span id="get-wallet">{{ getWallet }}</span>
+  <br />
+
+  <input id="deposit-input" type="text" #deposit />
+  <button id="deposit" (click)="setDeposit(deposit.value)">Depositar</button>
+</p>
+
+<app-list></app-list>
