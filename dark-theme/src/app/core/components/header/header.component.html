@@ -1,0 +1,16 @@
+<header>
+  <img src="../../../../assets/logo.svg" alt="logo da empresa" />
+
+  <ul>
+    <li><a [routerLink]="['']">Home</a></li>
+    <li><a [routerLink]="['about']">Sobre</a></li>
+    <li>
+      <button type="button" (click)="toggleTheme()">
+        <img
+          src="./assets/{{ icon }}.svg"
+          title="Clique e mude o tema do site para {{ textTheme }}"
+        />
+      </button>
+    </li>
+  </ul>
+</header>
